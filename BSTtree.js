@@ -18,7 +18,7 @@ function BST() {
 
 function insert(data) {
  var n = new Node(data, null, null);
- if (this.root === null) {
+ if (this.root === null) {//if no root node then that is where it goes
    this.root = n;
    }
  else {
