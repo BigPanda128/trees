@@ -2,6 +2,7 @@
 //create a node object so that we can easily call upon it whenever
 function Node(data, left, right) {
  this.data = data;
+ this.count = 1;
  this.left = left;
  this.right = right;
  this.show = show;
@@ -19,6 +20,14 @@ function BST() {
  this.inOrder = inOrder;
  this.preOrder = preOrder;
  this.postOrder = postOrder;
+ this.getMin = getMin;
+ this.getMax = getMax;
+ this.find = find;
+ //this.remove = remove;
+ //this.removeNode = removeNode;
+ this.update = update;
+ this.prArray = prArray;
+ this.genArray = genArray;
  }
 
 //insert a new value into the tree
