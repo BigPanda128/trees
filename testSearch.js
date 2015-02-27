@@ -1,6 +1,11 @@
 load("BSTtree.js");
 load("searches.js");
+
+load("BSTtree.js");
 load("traverse.js");
+load("searches.js");
+//load("remove.js");
+load("occurrences.js");
 
 var nums = new BST();
 nums.insert(23);
