@@ -24,6 +24,7 @@ function BST() {
  this.getMax = getMax;
  this.find = find;
  this.getSmallest = getSmallest;
+ this.max = max;
  //this.remove = remove;
  //this.removeNode = removeNode;
  this.update = update;
@@ -68,5 +69,16 @@ function getSmallest(node) {
 		            return getSmallest(node.left);
 			       }
 }
+
+function max() {
+	var node = this.root;
+	while (node.right !== null) {
+		node = node.right;
+	}
+	return node.data;
+}
+
+
+
 
 
